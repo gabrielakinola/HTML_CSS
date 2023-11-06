@@ -1,0 +1,90 @@
+/* CSS Styling */
+
+/* Selectors */
+
+/*1. Element selectors / Type selectors */
+
+body {
+  font-family: sans-serif;
+}
+
+h2 {
+  color: orange;
+}
+
+/*2. Class selectors (selecting using classes) */
+.heading-3 {
+  color: blue;
+}
+
+/*3. ID selectors (selecting using the ID #)  */
+#my-forth-header {
+  color: blueviolet;
+}
+
+/*4 Combined selectors */
+/* styling color using hex codes  */
+/* Assignment 1: Figure out how to use the RGB convention */
+h4.heading-4 {
+  color: #9fc5e8;
+}
+
+/*5 Attributes selectors [attribute="value"]*/
+[class="heading-5"] {
+  color: cadetblue;
+}
+
+/*6 Pseudo-selectors */
+.heading-6:hover {
+  color: darkgoldenrod;
+  cursor: pointer;
+}
+
+/*7 Multiple selectors */
+li.item-2,
+li.item-3 {
+  list-style: none;
+}
+
+[class="item-1"] {
+  color: green;
+}
+
+ul > li.item-1 {
+  font-size: 1.5rem;
+  color: red;
+}
+
+ul li.item-2 {
+  list-style: none;
+}
+
+li.item-3 a {
+  text-decoration: none;
+}
+
+.box-model-1 {
+  font: 600;
+  background-color: blue;
+  padding: 10px;
+  margin: 20px;
+  border: solid 5px;
+}
+
+input.name-input:focus {
+  outline: none;
+
+  border: solid 5px green;
+}
+
+table {
+  border-collapse: collapse;
+  width: 50%;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  padding: 10px;
+}
