@@ -6,6 +6,7 @@
 
 body {
   font-family: sans-serif;
+  display: block;
 }
 
 h2 {
@@ -73,7 +74,6 @@ li.item-3 a {
 
 input.name-input:focus {
   outline: none;
-
   border: solid 5px green;
 }
 

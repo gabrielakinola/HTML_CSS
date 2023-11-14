@@ -7,6 +7,7 @@ body {
 .super-nav-container {
   width: 100vw;
   position: sticky;
+  z-index: 50;
   background-color: white;
   top: 0;
   height: 100px;
@@ -18,7 +19,7 @@ body {
   display: flex;
   width: 100vw;
   padding: 80px 0px;
-  background-color: #fffaf3;
+
   justify-content: center;
 }
 .container {
@@ -103,30 +104,94 @@ body {
 .card-3,
 .card-4 {
   width: 90%;
-  height: 500px;
+  position: relative;
+  cursor: pointer;
+  height: 400px;
   border-radius: 10px;
-  background-color: #eee8df;
+  transition: box-shadow 0.3s;
   margin: 10px;
+}
+
+.card-1:hover,
+.card-2:hover,
+.card-3:hover,
+.card-4:hover {
+  scale: 1.02;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 .footer-container {
   display: flex;
+  flex-direction: column;
+  color: white;
   width: 100vw;
+  background-color: #0f0f0f;
+  /* justify-content: center; */
+  align-items: center;
+}
 
-  background-color: #fffaf3;
-  justify-content: center;
+.image-container {
+  width: 100%;
+  height: 70%;
+  margin-bottom: 50px;
+}
+
+.card-img {
+  max-width: 100%;
+  height: 100%;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.iphone-img {
+  max-width: 100%;
+  width: 100%;
+
+  height: 100%;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.card-1 button,
+.card-2 button,
+.card-3 button,
+.card-4 button {
+  position: absolute;
+  cursor: pointer;
+  bottom: 0;
+  right: 0;
+  margin-bottom: 3px;
+  margin-right: 3px;
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+  background-color: #d0d0d0;
+}
+
+.card-1 button:hover,
+.card-2 button:hover,
+.card-3 button:hover,
+.card-4 button:hover {
+  background-color: #faf9f9;
 }
 
 .footer {
-  background-color: #0f0f0f;
+  padding-top: 50px;
   color: white;
-  max-width: 1800px;
+  max-width: 1400px;
   width: 100%;
-  height: 400px;
+  height: 300px;
   border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .footer a {
   text-decoration: none;
   color: white;
+}
+
+.footer li {
+  margin: 5px;
+  list-style: none;
 }
